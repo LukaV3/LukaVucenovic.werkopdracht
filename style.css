@@ -20,7 +20,11 @@
 
 html, body {                      /* geldt voor html en body */
   margin: 0px;                    /* standaard marge 0 */
-  background-color: #EEEEEE;    /* achtergrondkleur lichtgrijs */
+  background-image: url(afbeeldingen/poolie.jpeg);
+  background-position: center;
+  background-size: cover;
+  
+  /* achtergrondkleur lichtgrijs */
   color: #303030;               /* tekstkleur donkergrijs */
 }  
 
@@ -31,7 +35,8 @@ div {                             /* geldt voor div */
 /* Indeling voor alle pagina's */
 
 .page {
-  width: 700px;                   /* vaste breedte van 700 pixels */
+  width: 700px;                 
+  height:  1550px;                /* vaste breedte van 700 pixels */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
 }
 
@@ -49,7 +54,9 @@ h1, h2, h3 {                      /* geldt voor h1 en h2 en h3 */
 
 p {
   margin: 10px 0px;
-  text-align: justify;            /* tekst links en rechts uitvullen */
+  text-align: justify;     /* tekst links en rechts uitvullen */
+  border: 3px solid colour royalblue;
+  background-color: deepskyblue;
 }
 
 img {
@@ -64,6 +71,7 @@ img {
   float:left;
   width:250px;
   padding-right: 15px; /* zorgt dat plaatje niet tegen tekst komt */
+  
 }
 .item-tekst {
   float:right;
@@ -107,6 +115,13 @@ nav ul li {
     float: left;
 }
 
+nav {
+position: absolute;
+z-index: 1;
+left: 1500px;
+
+}
+
 nav li a {
     display: block;
     color: white;
@@ -116,9 +131,17 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #aaaaaa;
+    background-color: #366273;
 }
 
 nav li a.active {
-    background-color: skyblue;
+    background-color: rgb(80, 207, 209);
 }
+
+table, td, tr {
+border: 2px solid whitesmoke;
+background-image: url();
+border-collapse: collapse; 
+
+}
+
